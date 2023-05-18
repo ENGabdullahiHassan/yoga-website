@@ -1,0 +1,53 @@
+body{
+    overflow-x: hidden;
+}
+.container{
+    width: 100%;
+}
+
+.mobile-menu {
+    display: flex;
+    position: fixed;
+    background-color: #353538;
+    inset: 0 0 0 0;
+    transform: translatex(0%);
+}
+.menus-link{
+    display: none;
+}
+.hero{
+    width: 100%;
+}
+.yoga{
+    width: 80%;
+    height: auto;
+}
+.yoga h1 {
+    font-size: 2rem;
+}
+
+.hero h1{
+    font-size: 50px;
+}
+.info-boxes{
+    grid-template-columns: 1fr;
+}
+.info-boxes .box img{
+    width: 100%;
+}
+.info-boxes h1{
+    font-size: 1rem;
+}
+.info-boxes p {
+    width: auto;
+}
+.bg-image{
+    width: 100%;
+}
+.only-image{
+    width: 90%;
+}
+.home-content{
+    grid-template-columns: 1fr;
+    
+}

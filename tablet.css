@@ -1,0 +1,107 @@
+body{
+    overflow-x: hidden;
+}
+header{
+    height: 0;
+    padding: 0;
+}
+.container{
+    width: 100%;
+}
+.disktop-menu{
+    display: none;
+}
+.mobile-menu {
+    display: flex;
+    position: fixed;
+    background-color: #353538;
+    inset: 0 0 0 50%;
+    transform: translatex(0%);
+    transition: transform 1s ease-in-out;
+}
+.mobile-menu[data-visible="false"] {
+    transform: translatex(100%);
+}
+.mobile-menu .navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    
+}
+.mobile-menu .navigation h1 {
+    color: #fff;
+    border-bottom: 1px solid #898686;
+    font-size: 30px;
+    padding: 15px;
+
+}
+
+.mobile-menu .navigation .menus-link{
+    display: flex;
+    flex-direction: column;
+}
+.mobile-menu .navigation .menus-link li a {
+    color: #fff;
+    font-size: 22px;
+}
+.humbergur{
+    display: flex;
+    z-index: 9999;
+    position: absolute;
+    top: 5%;
+    color: #fff;
+    right: 5%;
+    font-size: 50px;
+    background-color: #5f6ad4;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.humbergur i[data-visible="true"] {
+    display: block;
+}
+.humbergur i[data-visible="false"] {
+    display: none;
+}
+   
+.hero{
+    width: 100%;
+}
+.yoga{
+    width: 100%;
+    height: auto;
+}
+.yoga h1 {
+    font-size: 2rem;
+}
+
+.hero h1{
+    font-size: 50px;
+}
+.info-boxes{
+    grid-template-columns: 1fr;
+}
+.info-boxes .box img{
+    width: 100%;
+}
+.info-boxes h1{
+    font-size: 1rem;
+}
+.info-boxes p {
+    width: auto;
+}
+.bg-image{
+    width: 100%;
+}
+.only-image{
+    width: 90%;
+}
+.home-content{
+    grid-template-columns: 1fr 1fr;
+    
+}
